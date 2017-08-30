@@ -302,7 +302,7 @@ public class Methods
 
 
    //-------------------------------------------------------------------------
-   [DllImport(RuntimeEL_dll, EntryPoint = "Kitware_mummy_Runtime_AddObjectRefCountChangedCallback")]
+   [DllImport(RuntimeEL_dll, CallingConvention = CallingConvention.Cdecl, EntryPoint = "Kitware_mummy_Runtime_AddObjectRefCountChangedCallback")]
    private static extern uint Kitware_mummy_Runtime_AddObjectRefCountChangedCallback(ObjectRefCountChangedCallback cb);
 
    /// <summary>
@@ -315,7 +315,7 @@ public class Methods
 
 
    //-------------------------------------------------------------------------
-   [DllImport(RuntimeEL_dll, EntryPoint = "Kitware_mummy_Runtime_GetTypeEntryCount")]
+   [DllImport(RuntimeEL_dll, CallingConvention = CallingConvention.Cdecl, EntryPoint = "Kitware_mummy_Runtime_GetTypeEntryCount")]
    internal static extern uint Kitware_mummy_Runtime_GetTypeEntryCount();
 
    /// <summary>
@@ -328,7 +328,7 @@ public class Methods
 
 
    //-------------------------------------------------------------------------
-   [DllImport(RuntimeEL_dll, EntryPoint = "Kitware_mummy_Runtime_GetTypeEntryClassNameKey")]
+   [DllImport(RuntimeEL_dll, CallingConvention = CallingConvention.Cdecl, EntryPoint = "Kitware_mummy_Runtime_GetTypeEntryClassNameKey")]
    internal static extern System.IntPtr Kitware_mummy_Runtime_GetTypeEntryClassNameKey(uint mteIndex);
 
    /// <summary>
@@ -341,7 +341,7 @@ public class Methods
 
 
    //-------------------------------------------------------------------------
-   [DllImport(RuntimeEL_dll, EntryPoint = "Kitware_mummy_Runtime_RemoveObjectRefCountChangedCallback")]
+   [DllImport(RuntimeEL_dll, CallingConvention = CallingConvention.Cdecl, EntryPoint = "Kitware_mummy_Runtime_RemoveObjectRefCountChangedCallback")]
    internal static extern void Kitware_mummy_Runtime_RemoveObjectRefCountChangedCallback(uint cbid);
 
    /// <summary>

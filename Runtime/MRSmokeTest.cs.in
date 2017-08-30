@@ -40,7 +40,7 @@ public class MRSmokeTest : Kitware.mummy.Runtime.WrappedObject
    }
 
 
-   [DllImport("@CMAKE_SHARED_LIBRARY_PREFIX@MRSmokeTest@CMAKE_SHARED_LIBRARY_SUFFIX@", EntryPoint = "MRSmokeTest_new")]
+   [DllImport("@CMAKE_SHARED_LIBRARY_PREFIX@MRSmokeTest@CMAKE_SHARED_LIBRARY_SUFFIX@", CallingConvention = CallingConvention.Cdecl, EntryPoint = "MRSmokeTest_new")]
    internal static extern IntPtr MRSmokeTest_new();
 
    /// <summary>
@@ -50,7 +50,7 @@ public class MRSmokeTest : Kitware.mummy.Runtime.WrappedObject
    }
 
 
-   [DllImport("@CMAKE_SHARED_LIBRARY_PREFIX@MRSmokeTest@CMAKE_SHARED_LIBRARY_SUFFIX@", EntryPoint = "MRSmokeTest_delete")]
+   [DllImport("@CMAKE_SHARED_LIBRARY_PREFIX@MRSmokeTest@CMAKE_SHARED_LIBRARY_SUFFIX@", CallingConvention = CallingConvention.Cdecl, EntryPoint = "MRSmokeTest_delete")]
    internal static extern void MRSmokeTest_delete(HandleRef pThis);
 
    /// <summary>
@@ -67,7 +67,7 @@ public class MRSmokeTest : Kitware.mummy.Runtime.WrappedObject
    }
 
 
-   [DllImport("@CMAKE_SHARED_LIBRARY_PREFIX@MRSmokeTest@CMAKE_SHARED_LIBRARY_SUFFIX@", EntryPoint = "MRSmokeTest_Clone_01")]
+   [DllImport("@CMAKE_SHARED_LIBRARY_PREFIX@MRSmokeTest@CMAKE_SHARED_LIBRARY_SUFFIX@", CallingConvention = CallingConvention.Cdecl, EntryPoint = "MRSmokeTest_Clone_01")]
    internal static extern IntPtr MRSmokeTest_Clone_01(HandleRef pThis);
 
    /// <summary>

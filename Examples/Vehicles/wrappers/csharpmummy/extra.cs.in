@@ -5,7 +5,7 @@
 //
 //----------------------------------------------------------------------------
 //
-//  [DllImport("tests", EntryPoint = "@test@_Main")]
+//  [DllImport("tests", CallingConvention = CallingConvention.Cdecl, EntryPoint = "@test@_Main")]
 //  static extern int @test@_Main(int argc, [In, Out] string[] argv);
 //
 //  public static void Main(string[] args)

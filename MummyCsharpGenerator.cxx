@@ -1927,6 +1927,7 @@ void MummyCsharpGenerator::EmitCSharpDllImportDeclaration(gxsys_ios::ostream &os
 
   Emit(os, "[DllImport(");
   Emit(os, dllname);
+  Emit(os, ", CallingConvention = CallingConvention.Cdecl");
   Emit(os, ", EntryPoint = \"");
   Emit(os, f);
   Emit(os, "\")]");
@@ -3189,6 +3190,7 @@ void MummyCsharpGenerator::EmitCSharpConstructor(gxsys_ios::ostream &os, const c
     EmitIndent(os);
     Emit(os, "[DllImport(");
     Emit(os, dllname);
+	Emit(os, ", CallingConvention = CallingConvention.Cdecl");
     Emit(os, ", EntryPoint = \"");
     Emit(os, f.c_str());
     Emit(os, "\")]");
